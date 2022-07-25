@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Home"
-    url: "https://sciode.github.io/"
+    url: "https://sciode.com/"
   - title: "Blog"
-    url: "https://sciode.github.io/blog"
+    url: "https://blog.sciode.com/"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
