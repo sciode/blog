@@ -47,7 +47,7 @@
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       max-width: $max-width;
     }
 
@@ -67,11 +67,11 @@
     background-color: transparent;
     font-size: $type-size-3;
 
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       font-size: $type-size-2;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       font-size: $type-size-1;
     }
   }
@@ -94,11 +94,11 @@
   .archive__item {
     margin-bottom: 2em;
 
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       width: 75%;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       width: 50%;
     }
   }

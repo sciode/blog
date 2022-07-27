@@ -6,13 +6,13 @@
   margin-top: 1em;
   margin-bottom: 2em;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($xl) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
@@ -110,7 +110,7 @@
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     padding: 5px 10px;
   }
 
@@ -139,11 +139,11 @@
   .grid__wrapper {
     /* extend grid elements to the right */
 
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       margin-right: -1 * $right-sidebar-width-narrow;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       margin-right: -1 * $right-sidebar-width;
     }
   }
@@ -152,7 +152,7 @@
 .grid__item {
   margin-bottom: 2em;
 
-  @include breakpoint($small) {
+  @include breakpoint($xs) {
     float: left;
     width: span(5 of 10);
 
@@ -167,7 +167,7 @@
     }
   }
 
-  @include breakpoint($medium) {
+  @include breakpoint($sm) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
     width: span(3 of 12);
@@ -217,18 +217,18 @@
   .archive__item-excerpt {
     display: none;
 
-    @include breakpoint($medium) {
+    @include breakpoint($sm) {
       display: block;
       font-size: $type-size-6;
     }
   }
 
   .archive__item-teaser {
-    @include breakpoint($small) {
+    @include breakpoint($xs) {
       max-height: 200px;
     }
 
-    @include breakpoint($medium) {
+    @include breakpoint($sm) {
       max-height: 120px;
     }
   }
@@ -253,7 +253,7 @@
   margin-bottom: 2em;
   font-size: 1.125em;
 
-  @include breakpoint($small) {
+  @include breakpoint($xs) {
     float: left;
     margin-bottom: 0;
     width: span(4 of 12);
@@ -319,7 +319,7 @@
       bottom: 0;
     }
 
-    @include breakpoint($small) {
+    @include breakpoint($xs) {
       .archive__item-teaser {
         float: left;
         width: span(5 of 12);
@@ -360,7 +360,7 @@
       bottom: 0;
     }
 
-    @include breakpoint($small) {
+    @include breakpoint($xs) {
       text-align: right;
 
       .archive__item-teaser {
@@ -404,7 +404,7 @@
       bottom: 0;
     }
 
-    @include breakpoint($small) {
+    @include breakpoint($xs) {
       text-align: center;
 
       .archive__item-teaser {
@@ -444,11 +444,11 @@
 
   .wide {
   .archive {
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       padding-right: 0;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       padding-right: 0;
     }
   }

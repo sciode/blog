@@ -25,7 +25,7 @@
     justify-content: space-between;
     font-family: $sans-serif-narrow;
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       max-width: $max-width;
     }
 
@@ -50,6 +50,7 @@
   -ms-flex-item-align: center;
   align-self: center;
   font-weight: bold;
+  font-size: 2em;
   // z-index: 20;
 }
 
@@ -68,7 +69,7 @@
   .site-nav {
     margin-left: 0;
 
-    @include breakpoint($small) {
+    @include breakpoint($sm) {
       float: right;
     }
   }

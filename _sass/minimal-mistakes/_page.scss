@@ -14,7 +14,7 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
-  @include breakpoint($x-large) {
+  @include breakpoint($xl) {
     max-width: $max-width;
   }
 }
@@ -36,13 +36,13 @@ body {
 }
 
 .page {
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($xl) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
@@ -88,6 +88,7 @@ body {
 }
 
 .page__content {
+  text-align: justify;
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -206,8 +207,8 @@ body {
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
+      @include breakpoint($xl) {
+        max-width: $xl;
       }
     }
 
@@ -220,13 +221,13 @@ body {
     }
 
     .page__lead {
-      max-width: $medium;
+      max-width: $sm;
     }
 
     .page__title {
       font-size: $type-size-2;
 
-      @include breakpoint($small) {
+      @include breakpoint($xs) {
         font-size: $type-size-1;
       }
     }
@@ -254,7 +255,7 @@ body {
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     padding: 5px 10px;
   }
 
@@ -273,7 +274,7 @@ body {
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
-  @include breakpoint(max-width $small) {
+  @include breakpoint(max-width $xs) {
     .btn span {
       border: 0;
       clip: rect(0 0 0 0);
@@ -393,7 +394,7 @@ body {
   font-size: 0.75em;
   list-style: none;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -474,7 +475,7 @@ body {
   width: 60px;
   height: 60px;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     width: 100px;
     height: 100px;
   }
@@ -485,7 +486,7 @@ body {
   height: 40px;
   border-radius: 50%;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     width: 80px;
     height: 80px;
     padding: 5px;
@@ -497,7 +498,7 @@ body {
   float: right;
   width: calc(100% - 60px);
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     width: calc(100% - 100px);
   }
 }
@@ -530,12 +531,12 @@ body {
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
-  @include breakpoint($large) {
+  @include breakpoint($lg) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($xl) {
     width: calc(100% - #{$right-sidebar-width});
   }
 
@@ -557,21 +558,21 @@ body {
 
 .wide {
   .page {
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       padding-right: 0;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       padding-right: 0;
     }
   }
 
   .page__related {
-    @include breakpoint($large) {
+    @include breakpoint($lg) {
       padding-right: 0;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($xl) {
       padding-right: 0;
     }
   }

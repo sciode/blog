@@ -34,22 +34,23 @@ $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-1: 1em !default; // ~px
+$type-size-2: 1em !default; // ~px
+$type-size-3: 1em !default; // ~px
+$type-size-4: 1em !default; // ~px
+$type-size-5: 1em !default; // ~px
+$type-size-6: 1em !default; // ~px
+$type-size-7: 1em !default; // ~px
+$type-size-8: 1em !default; // ~px
 
-/* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
+/* headline scale */ 
+// major second with base size: 14
+$h-size-1: 2.281em !default; // ~31.93px
+$h-size-2: 2.027em !default; // ~28.38px
+$h-size-3: 1.802em !default; // ~25.23px
+$h-size-4: 1.602em !default; // ~22.43px
+$h-size-5: 1.125em !default; // ~15.75px
+$h-size-6: 1.0em !default; // 14px
 
 /*
    Colors
@@ -144,12 +145,14 @@ $base0f: #ff5370 !default;
    Breakpoints
    ========================================================================== */
 
-$small: 600px !default;
-$medium: 768px !default;
-$medium-wide: 900px !default;
-$large: 1024px !default;
-$x-large: 1280px !default;
-$max-width: $x-large !default;
+$xs: 0px !default;
+$sm: 600px !default;
+$md: 905px !default;
+$lg: 1240px !default;
+$xl: 1440px !default;
+$max-width: 100% !default;
+//$max-width: $xl !default;
+
 
 /*
    Grid
