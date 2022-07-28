@@ -250,16 +250,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -287,6 +287,10 @@ defaults:
       #classes: wide
       toc: true
       toc_sticky: true
+      sidebar_main: true
+      sidebar:
+        nav: "posts"
+
   # _pages
   - scope:
       path: ""
@@ -294,6 +298,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar_main: true
+      sidebar:
+        nav: "posts"
+  
 
 
 date_format: "%B %d, %Y" #"%m-%d-%Y"
