@@ -8,35 +8,4 @@ nav: "posts"
 ---
 
 {% include nav_list nav="windows" %}
-<!--only needed if this category has a subcategory
-{% assign child_arr = "" | split: ',' %}
-
-{% assign navigation = site.data.navigation.linux %}
-{% for nav in navigation %}
-{% for child in nav.children %}
-{% assign child_arr = child_arr | push: child.title %}
-{% endfor %}
-{% endfor %}
-
-{{ child_arr[0] }} {{ child_arr[1] }} {{ child_arr[2] }} {{ child_arr[3] }}
--->
-
-
-{% if paginator %}
-{% assign posts = paginator.posts %}
-{% else %}
-{% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-    {% for post in posts %}
-    {% for category in post.categories %}
-    {% if category == "Windows" %}
-    {% include archive-single.html type=entries_layout %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-</div>
-
-{% include paginator.html %}
+{% include cat_list cat="windows" %}

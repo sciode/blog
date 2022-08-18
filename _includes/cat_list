@@ -1,36 +1,15 @@
-{% assign child_arr = "" | split: ',' %}
 {% assign navigation = site.data.navigation[include.cat] %}
+{% assign child_arr = "" | split: ',' %}
+
 {% for nav in navigation %}
+{% if nav.children != null %}
 {% for child in nav.children %}
 {% assign child_arr = child_arr | push: child.title %}
 {% endfor %}
-{% endfor %}
-
-<hr>
-</hr>
-{% if child_arr.size == 0 %}
-{% if paginator %}
-{% assign posts = paginator.posts %}
 {% else %}
-{% assign posts = site.posts %}
+{% assign child_arr = child_arr | push: nav.title %}
 {% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-    {% for post in posts %}
-    {% for category in post.categories %}
-    {% if category == include.cat %}
-    {% include archive-single.html type=entries_layout %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-</div>
-
-{% include paginator.html %}
-{% endif %}
-
-<!--{{ child_arr[0] }} {{ child_arr[1] }} {{ child_arr[2] }} {{ child_arr[3] }}-->
-{{ child_arr[0] }} {{ child_arr[1] }} {{ child_arr[2] }} {{ child_arr[3] }}
+{% endfor %}
 
 {% assign num_posts = 0 %}
 {% if paginator %}
@@ -39,14 +18,23 @@
 {% assign posts = site.posts %}
 {% endif %}
 
+
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
     {% for post in posts %}
     {% for category in post.categories %}
+    {% if child_arr.size == 0 %}
+    {% if category == include.cat %}
+    {% assign num_posts = num_posts | plus:1 %}
+    {% include archive-single.html type=entries_layout %}
+    {% break %}
+    {% endif %}
+    {% else %}
     {% if child_arr contains category %}
     {% assign num_posts = num_posts | plus:1 %}
     {% include archive-single.html type=entries_layout %}
     {% break %}
+    {% endif %}
     {% endif %}
     {% endfor %}
     {% endfor %}
