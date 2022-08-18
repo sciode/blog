@@ -1,13 +1,9 @@
 # main links
 main:
-  - title: "Home"
-    url: "https://sciode.com/"
-  - title: "Blog"
-    url: "https://blog.sciode.com/"
   - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
+    url: /category/
+  - title: "About"
+    url: /about/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -18,19 +14,67 @@ main:
   #   url: /sitemap/
 
 posts:
-  - title: OS
+  - title: "OS"
+    url: /category/os/
     children:
       - title: "Linux"
-        url: /categories/#linux/
+        url: /category/os/linux/
       - title: "M1 macOS"
-        url: /categories/#macos/
+        url: /category/os/macos/
       - title: "Windows"
-        url: /categories/#windows/
-  - title: Dev
+        url: /category/os/windows/
+  - title: "Dev"
+    url: /category/dev/
     children:
       - title: "Python"
-        url: /categories/#python/
+        url: /category/dev/python/
       - title: "Java"
-        url: /categories/#java/
+        url: /category/dev/java/
       - title: "C++"
-        url: /categories/#cpp/
+        url: /category/dev/cpp/
+
+os:
+  - title: "OS"
+    url: /category/os/
+    children:
+      - title: "Linux"
+        url: /category/os/linux/
+      - title: "M1 macOS"
+        url: /category/os/macos/
+      - title: "Windows"
+        url: /category/os/windows/
+
+dev:
+  - title: "Dev"
+    url: /category/dev/
+    children:
+      - title: "Python"
+        url: /category/dev/python/
+      - title: "Java"
+        url: /category/dev/java/
+      - title: "C++"
+        url: /category/dev/cpp/
+
+linux:
+  - title: "Linux"
+    url: /category/os/linux/
+
+macos:
+  - title: "M1 macOS"
+    url: /category/os/macos/
+
+windows:
+  - title: "Windows"
+    url: /category/os/windows/
+
+python:
+  - title: "Python"
+    url: /category/dev/python/
+
+java:
+  - title: "Java"
+    url: /category/dev/java/
+
+cpp:
+  - title: "C++"
+    url: /category/dev/cpp/
