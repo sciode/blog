@@ -59,6 +59,10 @@
     bottom: 0;
   }
 
+/*  a {
+    color: inherit;
+  }
+*/  
   a + a {
     opacity: 0.5;
   }
@@ -199,7 +203,7 @@
 
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    font-size: 0.60em;
   }
 
   .page__meta-sep {
@@ -253,6 +257,11 @@
   position: relative;
   margin-bottom: 2em;
   font-size: 1.125em;
+
+/*  a {
+    color: inherit;
+  }
+*/
 
   @include breakpoint($xs) {
     float: left;
