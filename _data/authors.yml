@@ -1,12 +1,12 @@
 # authors
 
-#W. Choi
-#  name: "W. Choi"
-#  github : "sciode"
-#  #avatar: "/assets/images/wchoi.png"
-#  bio: "Developer. Designer. Diver."
-#  location:
-#  email:
-#  uri: "https://sciode.com/"
-#  home: "https://sciode.com/"
-#  orcid:
+W. Choi:
+  name: "W. Choi"
+  github : "sciode"
+  avatar: "/assets/images/wchoi.png"
+  bio: "Developer. Designer. Diver."
+  location: "Korea"
+  email: "wchoi@sciode.com"
+  uri: "https://sciode.com/"
+  home: "https://sciode.com/"
+  orcid:

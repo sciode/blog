@@ -42,3 +42,13 @@ td,
 th {
   vertical-align: middle;
 }
+
+td.authortable {
+    padding: 0.5em;
+    font-size: $type-size-4;
+    @include color-assign(border, background, '0px hidden here');
+    @include color-assign(border-bottom, background, '0px hidden here');
+    @include color-assign(border-right, background, '0px hidden here');
+    text-align: center;
+    vertical-align: top;
+  }
