@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Sciode"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "W. Choi"
+name                     : &name "W. Choi"
 description              : # "An amazing website."
 url                      : "https://blog.sciode.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -58,10 +58,10 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : true # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_full_content      : true # true, false (default)
+search_provider          : "google" # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -71,11 +71,11 @@ algolia:
   powered_by             : # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "9b6057caa08440d2e389c820da05e241bdfcf46a"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -96,15 +96,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-tag-manager" # false (default), "google", "google-universal", "google-gtag", "google-tag-manager", "custom"
   google:
-    tracking_id          :
+    tracking_id          : G-SXP0N00GS8
+    gtm_id               : GTM-NXJNG5P
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "W. Choi"
+  name             : *name
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Developer. Designer. Diver."
   location         : "South Korea"
@@ -290,7 +291,6 @@ defaults:
       sidebar_main: true
       sidebar:
         nav: "posts"
-
   # _pages
   - scope:
       path: ""
